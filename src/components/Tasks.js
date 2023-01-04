@@ -1,4 +1,5 @@
-import Task from './Task'
+import Task from "./Task";
+import React from "react";
 
 const Tasks = ({ tasks, onDelete, onToggle }) => {
   return (
@@ -7,7 +8,7 @@ const Tasks = ({ tasks, onDelete, onToggle }) => {
         <Task key={index} task={task} onDelete={onDelete} onToggle={onToggle} />
       ))}
     </>
-  )
-}
+  );
+};
 
-export default Tasks
+export default Tasks;
